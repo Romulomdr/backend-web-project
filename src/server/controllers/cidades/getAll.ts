@@ -3,7 +3,7 @@ import * as yup from 'yup';
 import { StatusCodes } from "http-status-codes";
 
 import { validation } from "../../shared/middleware";
-//Interface para validação das Cidades
+//Interface para validação da query 
 interface IqueryProps{  
     page?: number;
     limit?: number;
