@@ -10,5 +10,8 @@ router.get('/teste', (_, res) => {
 
 router.post('/cidades', CidadesController.createValidation, CidadesController.create);
 router.get('/cidades', CidadesController.getAllValidation, CidadesController.getAll);
+// Para fazer com que ele use o parametro da query o caminho tem que ser diferente
+router.get('/cidades/:id', CidadesController.getByIdValidation, CidadesController.getById);
+router.put('/cidades/:id', CidadesController.updateByIdValidation, CidadesController.updateById);
 
 export { router };
