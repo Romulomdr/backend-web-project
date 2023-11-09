@@ -9,7 +9,7 @@ interface IqueryProps{
 };
 
 // Criando uma Regra de validação geral para todas as partes da requisição que forem usadas.
-export const getByIdValidation = validation((getSchema) => ({
+export const deleteByIdValidation = validation((getSchema) => ({
     //Tipos de requisição, Body, header, params, query
     params: getSchema<IqueryProps>(yup.object().shape({
         id: yup.number().integer().required().min(1).moreThan(0)
@@ -17,7 +17,7 @@ export const getByIdValidation = validation((getSchema) => ({
 }));
 
 //Enviando resposta ao servidor
-export const getById = async (req: Request<{}, {}, {}, IqueryProps>, res: Response) => {
+export const deleteById = async (req: Request<{}, {}, {}, IqueryProps>, res: Response) => {
 
     console.log(req.params);
 

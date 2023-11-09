@@ -13,5 +13,8 @@ router.get('/cidades', CidadesController.getAllValidation, CidadesController.get
 // Para fazer com que ele use o parametro da query o caminho tem que ser diferente
 router.get('/cidades/:id', CidadesController.getByIdValidation, CidadesController.getById);
 router.put('/cidades/:id', CidadesController.updateByIdValidation, CidadesController.updateById);
+router.delete('/cidades/:id', CidadesController.deleteByIdValidation, CidadesController.deleteById);
 
 export { router };
+
+//QUANDO VOLTAR FAZER O DELETE

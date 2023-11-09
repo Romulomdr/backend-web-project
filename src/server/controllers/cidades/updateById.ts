@@ -28,5 +28,5 @@ export const updateById = async (req: Request<IparamProps, {}, IBodyProps>, res:
     console.log(req.body);
     console.log(req.params);
 
-    return res.status(StatusCodes.BAD_REQUEST).send('Não implementado!');
+    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).send('Não implementado!');
 };
