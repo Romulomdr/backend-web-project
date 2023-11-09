@@ -13,6 +13,7 @@ interface IqueryProps{
 
 // Criando uma Regra de validação geral para todas as partes da requisição que forem usadas.
 export const getAllValidation = validation((getSchema) => ({
+    //Tipos de requisição, Body, header, params, query
     query: getSchema<IqueryProps>(yup.object().shape({
         page: yup.number().optional().moreThan(0),
         limit: yup.number().optional().moreThan(0),
