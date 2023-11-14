@@ -48,7 +48,14 @@ exports.getAllValidation = (0, middleware_1.validation)((getSchema) => ({
 }));
 //Enviando resposta ao servidor
 const getAll = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.setHeader('access-control-expose-headers', 'x-total-count');
+    res.setHeader('x-total-count', 1);
     console.log(req.query);
-    return res.status(http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR).send('Não implementado!');
+    return res.status(http_status_codes_1.StatusCodes.OK).json([
+        {
+            id: 1,
+            nome: "Tucuruí",
+        }
+    ]);
 });
 exports.getAll = getAll;
