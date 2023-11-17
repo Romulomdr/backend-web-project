@@ -1,0 +1,9 @@
+dotenv = serve para criar as variaveis do ambiente 
+ejs-locals = serve para criar um front-end já indentado ao ambiente
+express = Framework para criação do server-side.
+jest = Realizar os testes unitarios 
+knex = framework para realizar conexão com o banco de dados
+multer = Para facilitar o envio de imagens caso precise
+Moongose = para fazer a modelagem da data
+Nodemon = para monitorar o server mas ainda não configurei
+tsc = Criar o build
